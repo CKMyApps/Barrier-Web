@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BARRIER</title>
+  <link rel="icon" href="./public/favicon.ico">
+  <script>
+    const game = new URL("./public/", document.baseURI);
+    game.search = location.search;
+    game.hash = location.hash;
+    location.replace(game.href);
+  </script>
+  <noscript><meta http-equiv="refresh" content="0; url=./public/"></noscript>
+</head>
+<body>
+  <a href="./public/">Play BARRIER</a>
+</body>
+</html>
